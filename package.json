@@ -1,0 +1,17 @@
+{
+	"name": "Blue",
+	"version": "1.0.0",
+	"description": "Blue is a discord bot made my Xabian",
+	"main": "Blue-General.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "Xabi",
+	"license": "ISC",
+	"dependencies": {
+		"discord.js": "^12.4.1",
+		"mysql": "^2.18.1",
+		"node.js": "0.0.1-security"
+	}
+}
