@@ -1,0 +1,28 @@
+{
+  "name": "blue",
+  "version": "1.0.0",
+  "description": "A bot made by Xa",
+  "main": "Blue.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Xa",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^8.1.0",
+    "colors": "^1.4.0",
+    "discord-api-types": "^0.37.33",
+    "discord.js": "^14.7.1",
+    "moment": "^2.29.4",
+    "mongoose": "^6.9.1",
+    "ms": "^2.1.3",
+    "mysql": "^2.18.1",
+    "node-fetch": "^3.3.0",
+    "pretty-ms": "^8.0.0",
+    "quick.db": "^9.0.8",
+    "super-djs": "^1.7.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.34.0"
+  }
+}
