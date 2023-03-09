@@ -13,7 +13,7 @@ module.exports = {
         .setTitle("Todo list")
         .addFields(
           {name: " ", value: "Add more commands",},
-          {name: " ", value: "???",}
+          {name: " ", value: "???",},
           {name: " ", value: "Profit",}
       )
 
