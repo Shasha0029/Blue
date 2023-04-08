@@ -48,7 +48,7 @@ client.events = new Collection();
 
 module.exports = client;
 
-["prefix", "application_commands", "modals", "events"].forEach((file) => {
+["prefix", "modals", "application_commands", "events","sfd"].forEach((file) => {
   require(`./handlers/${file}`)(client, config);
 });
 
