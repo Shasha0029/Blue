@@ -3,6 +3,7 @@ const { EmbedBuilder } = require('discord.js');
 module.exports = {
     config: {
         name: "", // Name of Command
+        aliases: [""],
         description: "", // Command Description
         usage: "" // Command usage
     },
