@@ -12,9 +12,9 @@ module.exports = {
       const finalEmbed = new EmbedBuilder()
         .setTitle("Todo list")
         .addFields(
-          {name: " ", value: "Add more commands",},
-          {name: " ", value: "???",},
-          {name: " ", value: "Profit",}
+          {name: " ", value: "Music Player",},
+          {name: " ", value: "Video Player",},
+          {name: " ", value: "Ect",}
       )
 
       return message.reply({ embeds: [finalEmbed] });// execute

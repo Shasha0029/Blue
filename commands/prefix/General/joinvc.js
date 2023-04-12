@@ -1,4 +1,5 @@
 const { EmbedBuilder } = require('discord.js');
+const { joinVoiceChannel } = require('@discordjs/voice');
 
 module.exports = {
     config: {
@@ -10,7 +11,6 @@ module.exports = {
     owner: false, // Owner only?
     run: async (client, message, args, prefix, config, db) => {
       //discord.js and client declaration
-      const { joinVoiceChannel } = require('@discordjs/voice');
               joinVoiceChannel({
                   channelId: message.member.voice.channel.id,
                   guildId: message.guild.id,

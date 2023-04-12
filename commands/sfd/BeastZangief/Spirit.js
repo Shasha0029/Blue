@@ -3,7 +3,7 @@ const { EmbedBuilder } = require("discord.js");
 module.exports = {
   config: {
     name: "bzangief3",
-    alias: "bzan3",
+    aliases: "bzan3",
     description: "Sfd Beast Zangief Spirit",
   },
   permissions: ['SendMessages'],

@@ -3,14 +3,14 @@ const fs = require('fs');
 
 module.exports = {
   config: {
-    name: "help",
+    name: "ah",
     description: "Replies with help menu.",
   },
-  permissions: ['SendMessages'],
-  owner: false,
+  permissions: ["Administrator", 'SendMessages'],
+  owner: true,
   run: async (client, message, args, prefix) => {
-    const commands = fs.readdirSync('./commands/prefix/General').filter(file => file.endsWith('.js'));
-    const info = fs.readdirSync('./commands/prefix/Info').filter(file => file.endsWith('.js'));
+    const commands = client.prefix_commands.map(command => `${prefix}${command.config.name}`);
+
     return message.reply(
       {
         embeds: [
@@ -25,7 +25,7 @@ module.exports = {
                 )
               }
             )
-            .setDescription(commands.join('\n')+'\n'+info.join('\n'))
+            .setDescription(commands.join('\n'))
             .setFooter(
               {
                 text: `→ Use ${prefix}info for a command info.`
